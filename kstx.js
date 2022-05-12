@@ -441,7 +441,7 @@ let res,
   console.log('\n============== 自动提现 ==============');
   let tips = '按提现列表自动提现';
   if (ksjsbCash) {
-    tips = `自动提现${ksjsbAggressive}元`;
+    tips = `自动提现${ksjsbCash}元`;
   }
   if (ksjsbAggressive) {
     tips = '最大化提现';
