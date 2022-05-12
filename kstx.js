@@ -251,7 +251,7 @@ let res,
 
 
 
-  //兑换
+  //兑换方式
   async changeExchangeType(_0x1bd22f) {
     let _0x4e7ea7 =
         'https://nebula.kuaishou.com/rest/n/nebula/exchange/changeExchangeType',
@@ -438,6 +438,9 @@ let res,
     await u.accountInfo();
     await $.wait(200);
   }
+  console.log('\n============== 自动兑换 ==============');
+  
+
   console.log('\n============== 自动提现 ==============');
   let tips = '按提现列表自动提现';
   if (ksjsbCash) {
@@ -455,14 +458,14 @@ let res,
   } else {
     console.log(`非提现时间，现在设置为${ksjsbWithdrawTime}点${tips}`);
   }
-  if (helpList.length > 0) {
+  /* if (helpList.length > 0) {
     for (let u of CurrentUser) {
       for (let code of helpList) {
         await u.helpScan(code);
         await $.wait(200);
       }
     }
-  }
+  } */
 })()
   .catch((error) => $.logErr(error))
   .finally(() => $.done());
