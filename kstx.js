@@ -356,7 +356,7 @@ let res,
 
 
   //绑定详情
-  /* async bindInfo() {
+   async bindInfo() {
     let _0x328bd6 =
         'https://www.kuaishoupay.com/pay/account/h5/provider/bind_info',
       _0x2f2b1b = 'account_group_key=NEBULA_CASH_ACCOUNT&bind_page_type=3',
@@ -389,7 +389,7 @@ let res,
           _0x4d5493.error_msg
       );
     }
-  } */
+  } 
 
 
 
@@ -434,15 +434,15 @@ let res,
     return;
   }
 
-  //console.log('\n============== 账户情况 ==============');
-  /* for (let u of CurrentUser) {
+  console.log('\n============== 账户情况 ==============');
+   for (let u of CurrentUser) {
     await u.accountOverview();
     await $.wait(200);
     await u.bindInfo();
     await $.wait(200);
     await u.accountInfo();
     await $.wait(200);
-  } */
+  } 
   
   console.log('\n============== 自动提现 ==============');
   let tips = '按提现列表自动提现';
@@ -461,7 +461,7 @@ let res,
   } else {
     console.log(`非提现时间，现在设置为${curHours}点${tips}`);
   }
-  /* if (helpList.length > 0) {
+   /* if (helpList.length > 0) {
     for (let u of CurrentUser) {
       for (let code of helpList) {
         await u.helpScan(code);
