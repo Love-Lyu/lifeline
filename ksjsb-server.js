@@ -1,6 +1,5 @@
 /**
  * 变量格式: export ksjsb_data='xxxxx'  多个账号用 @分割 或者 换行分割
- * 神秘代码: aHR0cHM6Ly90Lm1lL3ltbF90Zw==
  */
 const $ = new Env("快手极速版");
 const notify = $.isNode() ? require("./sendNotify") : "";
